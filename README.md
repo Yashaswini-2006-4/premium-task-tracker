@@ -1,75 +1,45 @@
 # 🚀 Premium Task Tracker
 
-A modern Full Stack Task Management application built using the **MERN Stack**. The application allows users to manage daily tasks with a clean dashboard, analytics, task filtering, and a responsive UI.
-
----
+A modern Full Stack Task Management application built using the MERN Stack. It helps users organize, manage, and track daily tasks with an elegant and responsive user interface.
 
 ## 🌐 Live Demo
 
-Frontend: Coming Soon
+Frontend: https://premium-task-tracker.vercel.app
 
-Backend API: Coming Soon
+Backend API: https://premium-task-tracker.onrender.com
+
+---
+
+# 📖 Overview
+
+Premium Task Tracker is a responsive task management application designed to improve productivity. Users can create, update, delete, and manage tasks based on priority, status, and due dates. The application features a clean dashboard with analytics and real-time task statistics.
 
 ---
 
 # ✨ Features
 
-## 📋 Task Management
-- ✅ Create Tasks
-- ✅ View Tasks
-- ✅ Update Tasks
-- ✅ Delete Tasks
-- ✅ Search Tasks
-- ✅ Filter by Priority
-- ✅ Filter by Status
+- 📋 Create, Edit and Delete Tasks
+- 📊 Dashboard with Task Statistics
+- 📈 Analytics Page
+- ⚙️ Settings Page
+- 🔍 Search Tasks
+- 🟢 Task Status Management
+- 🔴 Priority Levels (High, Medium, Low)
+- 📅 Due Date Management
+- 📱 Fully Responsive Design
+- 🌙 Modern Dark UI
+- ☁️ MongoDB Atlas Database
+- 🚀 REST API Integration
 
 ---
 
-## 📊 Dashboard
-
-- Total Tasks
-- Completed Tasks
-- Pending Tasks
-- High Priority Tasks
-- Dynamic Statistics Cards
-
----
-
-## 📈 Analytics
-
-- Weekly Productivity Chart
-- Task Progress Overview
-
----
-
-## ⚙️ Settings
-
-- Developer Information
-- Technology Stack
-- Project Information
-
----
-
-## 🎨 UI Features
-
-- Responsive Design
-- Dark Dashboard Theme
-- Modern Cards
-- Beautiful Sidebar Navigation
-- Reusable Components
-- Modal-based Task Creation
-- Clean Dashboard Layout
-
----
-
-# 🛠 Tech Stack
+# 🛠️ Tech Stack
 
 ## Frontend
 
 - React.js
 - Vite
 - Tailwind CSS
-- React Hook Form
 - Axios
 - React Router DOM
 - Lucide React
@@ -80,12 +50,12 @@ Backend API: Coming Soon
 - Express.js
 - MongoDB Atlas
 - Mongoose
+- Dotenv
 - CORS
-- dotenv
 
 ---
 
-# 📁 Project Structure
+# 📂 Project Structure
 
 ```
 premium-task-tracker
@@ -95,16 +65,14 @@ premium-task-tracker
 │   │   ├── components
 │   │   ├── pages
 │   │   ├── services
+│   │   ├── context
 │   │   ├── assets
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
+│   │   └── App.jsx
 │   └── package.json
 │
 ├── server
 │   ├── config
 │   ├── controllers
-│   ├── middleware
 │   ├── models
 │   ├── routes
 │   ├── server.js
@@ -121,6 +89,8 @@ premium-task-tracker
 
 ```bash
 git clone https://github.com/Yashaswini-2006-4/premium-task-tracker.git
+
+cd premium-task-tracker
 ```
 
 ---
@@ -129,15 +99,16 @@ git clone https://github.com/Yashaswini-2006-4/premium-task-tracker.git
 
 ```bash
 cd server
+
 npm install
 ```
 
-Create a **.env** file inside the server folder.
+Create a `.env` file
 
 ```env
 PORT=5000
 
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=Your_MongoDB_Atlas_URI
 ```
 
 Run Backend
@@ -152,48 +123,77 @@ npm run dev
 
 ```bash
 cd client
+
 npm install
+```
+
+Create a `.env` file
+
+```env
+VITE_API_URL=http://localhost:5000/api/tasks
+```
+
+Run Frontend
+
+```bash
 npm run dev
-```
-
-Frontend runs on
-
-```
-http://localhost:5173
-```
-
-Backend runs on
-
-```
-http://localhost:5000
 ```
 
 ---
 
 # 📡 API Endpoints
 
-## Tasks
-
 | Method | Endpoint | Description |
-|---------|----------|-------------|
+|----------|-----------------|----------------------|
 | GET | /api/tasks | Get all tasks |
-| GET | /api/tasks/:id | Get single task |
-| POST | /api/tasks | Create task |
+| GET | /api/tasks/:id | Get task by ID |
+| POST | /api/tasks | Create new task |
 | PUT | /api/tasks/:id | Update task |
 | DELETE | /api/tasks/:id | Delete task |
 
 ---
 
-# 🚀 Future Improvements
+# 📊 Dashboard
 
-- 🔐 User Authentication (JWT)
-- 👤 User Profiles
-- 📅 Calendar View
-- 🔔 Email Notifications
-- 📱 PWA Support
-- 🌙 Dark / Light Theme Toggle
-- 📊 Advanced Analytics
-- 📈 Real-time Updates using Socket.io
+The dashboard provides:
+
+- Total Tasks
+- Completed Tasks
+- Pending Tasks
+- High Priority Tasks
+- Recent Tasks
+- Productivity Analytics
+
+---
+
+# 🚀 Deployment
+
+Frontend
+
+- Vercel
+
+Backend
+
+- Render
+
+Database
+
+- MongoDB Atlas
+
+---
+
+# 🎯 Future Improvements
+
+- User Authentication (JWT)
+- User Profiles
+- Task Categories
+- Email Notifications
+- Dark / Light Theme
+- Drag & Drop Task Management
+- Calendar View
+- File Attachments
+- Team Collaboration
+- Real-Time Updates using Socket.io
 
 ---
 
@@ -203,19 +203,20 @@ http://localhost:5000
 
 Computer Science Engineering Student
 
-Passionate about Full Stack Development and building modern web applications.
+Full Stack Developer
 
 GitHub:
 https://github.com/Yashaswini-2006-4
 
----
-
-# ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
+LinkedIn:
+(Add your LinkedIn profile here)
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is licensed under the MIT License.
+This project is developed for educational and portfolio purposes.
+
+---
+
+⭐ If you like this project, consider giving it a Star on GitHub!
